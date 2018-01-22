@@ -1,0 +1,7 @@
+base   marquee
+author Michael Bohn
+email  mjbohn@gmail.com
+date   2018-01-19
+name   marquee plugin
+desc   Newsticker based on jQuery marquee
+url    http://toBeDefinedLater
