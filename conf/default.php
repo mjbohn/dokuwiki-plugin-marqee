@@ -17,3 +17,10 @@ $conf['gap']              = 20;
 $conf['pauseOnHover']     = false;
 $conf['pauseOnCycle']     = false;
 $conf['startVisible']     = false;
+
+$conf['showBorder']    = 0;
+$conf['border']        = '.5px dashed black';
+$conf['border-radius'] = '20px';
+$conf['width']         = '100%';
+$conf['height']        = '1.5em';
+$conf['background-color'] = 'lightgoldenrodyellow';

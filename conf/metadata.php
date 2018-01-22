@@ -6,9 +6,9 @@
  */
 
 
-$meta['allowCss3Support'] = array('onoff');
-$meta['css3easing']       = array('string');
-$meta['easing']           = array('string');
+//$meta['allowCss3Support'] = array('onoff');
+//$meta['css3easing']       = array('string');
+//$meta['easing']           = array('string');
 $meta['delayBeforeStart'] = array('numeric');
 $meta['direction']        = array('multichoice', _choices => array('left', 'right', 'up', 'down'));
 $meta['duplicated']       = array('onoff');
@@ -19,3 +19,9 @@ $meta['pauseOnHover']     = array('onoff');
 $meta['pauseOnCycle']     = array('onoff');
 $meta['startVisible']     = array('onoff');
 
+$meta['showBorder']    = array('onoff');
+$meta['border']        = array('string');
+$meta['border-radius'] = array('string');
+$meta['width']         = array('string');
+$meta['height']        = array('string');
+$meta['background-color'] = array('string');
