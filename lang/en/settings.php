@@ -17,3 +17,10 @@ $lang['gap']              = "Gap in pixels between the tickers. Will work only w
 $lang['pauseOnHover']     = "On hover pause the marquee. If browser supports CSS3 and allowCss3Support is set to true than it will be done using CSS3. Otherwise this will be done using jQuery plugin. Default is false.";
 $lang['pauseOnCycle']     = "On cycle, pause the marquee for delayBeforeStart milliseconds.";
 $lang['startVisible']     = "The marquee will be visible in the start if set to true.";
+
+$lang['showBorder']    = 'Show border on ticker';
+$lang['border']        = 'Border style (default "0.5px dashed #000" )';
+$lang['border-radius'] = 'Add rounded corners ( 0 for none )';
+$lang['width']         = 'Ticker width (%)';
+$lang['height']        = 'Ticker height (default 2em)';
+$lang['background-color'] = 'Background-Color';

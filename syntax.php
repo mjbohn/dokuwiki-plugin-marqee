@@ -76,7 +76,7 @@ class syntax_plugin_marquee extends DokuWiki_Syntax_Plugin {
         list($state,$match) = $data;
         switch ($state) {
             case DOKU_LEXER_ENTER :
-                $renderer->doc .= "<div class='marquee'>";
+                $renderer->doc .= "<div class='plugin_marquee'>";
                 break;
 
             case DOKU_LEXER_UNMATCHED :
