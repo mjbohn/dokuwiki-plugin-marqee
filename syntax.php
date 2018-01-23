@@ -41,7 +41,6 @@ class syntax_plugin_marquee extends DokuWiki_Syntax_Plugin {
      * @param string $mode Parser mode
      */
     public function connectTo($mode) {
-//        $this->Lexer->addSpecialPattern('<FIXME>',$mode,'plugin_marquee');
         $this->Lexer->addEntryPattern('<mticker.*?>(?=.*?</mticker>)',$mode,'plugin_marquee');
     }
 
