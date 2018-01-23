@@ -63,6 +63,7 @@ class syntax_plugin_marquee extends DokuWiki_Syntax_Plugin {
 
             case DOKU_LEXER_UNMATCHED :
 //                $match .= " + + + ";
+                $match = str_replace(' ','&nbsp;',$match);
                 return array($state, $match);
             case DOKU_LEXER_EXIT :       return array($state, '');
         }
@@ -86,7 +87,8 @@ class syntax_plugin_marquee extends DokuWiki_Syntax_Plugin {
                 break;
 
             case DOKU_LEXER_UNMATCHED :
-                $renderer->doc .= $renderer->_xmlEntities($match);
+//                $renderer->doc .= $renderer->_xmlEntities($match);
+                $renderer->doc .= $match;
                 break;
             case DOKU_LEXER_EXIT :
                 $renderer->doc .= "</div> ";
