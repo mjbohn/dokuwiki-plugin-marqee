@@ -16,7 +16,7 @@ class syntax_plugin_marquee extends DokuWiki_Syntax_Plugin {
     public function getType() {
         return 'formatting';
     }
-    function getAllowedTypes() { return array('formatting'); }
+    function getAllowedTypes() { return array('formatting','substition'); }
     /**
      * @return string Paragraph type
      */
