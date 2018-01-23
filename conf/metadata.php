@@ -25,3 +25,4 @@ $meta['border-radius'] = array('string');
 $meta['width']         = array('string');
 $meta['height']        = array('string');
 $meta['background-color'] = array('string');
+$meta['spacer'] = array('string');

@@ -62,7 +62,7 @@ class syntax_plugin_marquee extends DokuWiki_Syntax_Plugin {
             case DOKU_LEXER_ENTER :      return array($state);
 
             case DOKU_LEXER_UNMATCHED :
-//                $match .= " + + + ";
+                $match .= $this->getConf('spacer');
                 $match = str_replace(' ','&nbsp;',$match);
                 return array($state, $match);
             case DOKU_LEXER_EXIT :       return array($state, '');

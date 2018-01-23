@@ -24,3 +24,4 @@ $conf['border-radius'] = '20px';
 $conf['width']         = '100%';
 $conf['height']        = '1.5em';
 $conf['background-color'] = 'lightgoldenrodyellow';
+$conf['spacer'] = ' +++ ';
