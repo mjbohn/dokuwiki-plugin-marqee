@@ -16,7 +16,12 @@ class syntax_plugin_marquee extends DokuWiki_Syntax_Plugin {
     public function getType() {
         return 'formatting';
     }
-    function getAllowedTypes() { return array('formatting','substition'); }
+
+    function getAllowedTypes() {
+//        return array('formatting','substition','protected');
+        return array('container','substition','protected','disabled','formatting','paragraphs');
+    }
+
     /**
      * @return string Paragraph type
      */
@@ -27,7 +32,7 @@ class syntax_plugin_marquee extends DokuWiki_Syntax_Plugin {
      * @return int Sort order - Low numbers go before high numbers
      */
     public function getSort() {
-        return 400;
+        return 194;
     }
 
     /**
@@ -57,7 +62,9 @@ class syntax_plugin_marquee extends DokuWiki_Syntax_Plugin {
         switch ($state) {
             case DOKU_LEXER_ENTER :      return array($state);
 
-            case DOKU_LEXER_UNMATCHED :  return array($state, $match);
+            case DOKU_LEXER_UNMATCHED :
+//                $match .= " + + + ";
+                return array($state, $match);
             case DOKU_LEXER_EXIT :       return array($state, '');
         }
         return array();
@@ -80,7 +87,7 @@ class syntax_plugin_marquee extends DokuWiki_Syntax_Plugin {
                 break;
 
             case DOKU_LEXER_UNMATCHED :
-                $renderer->doc .= "$match";
+                $renderer->doc .= $renderer->_xmlEntities($match);
                 break;
             case DOKU_LEXER_EXIT :
                 $renderer->doc .= "</div> ";
